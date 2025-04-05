@@ -7,7 +7,7 @@ ENTITY_SPEED = {
     'Level1Bg1': 0,
     'Level1Bg2': 0,
     'Level1Bg3': 1,
-    'Level1Bg4': 2
+    'Level1Bg4': 1
 }
 
 MENU_OPTION = ('NEW GAME',
