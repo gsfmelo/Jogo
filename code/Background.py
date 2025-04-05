@@ -1,4 +1,4 @@
-from assets.Const import WIN_WIDTH, ENTITY_SPEED
+from code.Const import WIN_WIDTH, ENTITY_SPEED
 from code.Entity import Entity
 
 

@@ -4,6 +4,18 @@ COLOR_ORANGE = (255, 128, 0)
 COLOR_WHITE = (255, 255, 255)
 COLOR_YELLOW = (255, 200, 0)
 
+ENTITY_HEALTH = {
+    'Level1Bg0': 999,
+    'Level1Bg1': 999,
+    'Level1Bg2': 999,
+    'Level1Bg3': 999,
+    'Level1Bg4': 999,
+    'Player1': 300,
+    'Player2': 300,
+    'Enemy1': 50,
+    'Enemy2': 60,
+    'Enemy3': 50
+}
 ENTITY_SPEED = {
     'Level1Bg0': 0,
     'Level1Bg1': 0,
