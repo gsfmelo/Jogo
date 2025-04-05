@@ -5,9 +5,9 @@ COLOR_YELLOW = (255, 200, 0)
 ENTITY_SPEED = {
     'Level1Bg0': 0,
     'Level1Bg1': 0,
-    'Level1Bg2': 2,
-    'Level1Bg3': 0,
-    'Level1Bg4': 4
+    'Level1Bg2': 0,
+    'Level1Bg3': 1,
+    'Level1Bg4': 2
 }
 
 MENU_OPTION = ('NEW GAME',
