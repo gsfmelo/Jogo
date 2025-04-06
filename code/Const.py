@@ -108,7 +108,6 @@ EVENT_TIMEOUT = pygame.USEREVENT + 2
 
 MENU_OPTION = ('NEW GAME',
                'NEW GAME - COOPERATIVE',
-               'NEW GAME - COMPETITIVE',
                'SCORE',
                'EXIT')
 

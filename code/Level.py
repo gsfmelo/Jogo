@@ -17,7 +17,7 @@ from code.Player import Player
 
 class Level:
 
-    def __init__(self, window: Surface, name: str, game_mode: str, player_score: list[int]):
+    def __init__(self, window: Surface, name: str, game_mode: str, player_score: list[int]) -> None:
         self.timeout = TIMEOUT_LEVEL
         self.window = window
         self.name = name
@@ -27,7 +27,7 @@ class Level:
         player = EntityFactory.get_entity('Player1')
         player.score = player_score[0]
         self.entity_list.append(player)
-        if game_mode in [MENU_OPTION[1], MENU_OPTION[2]]:
+        if game_mode in [MENU_OPTION[1]]:
             player = EntityFactory.get_entity('Player2')
             player.score = player_score[1]
             self.entity_list.append(player)
@@ -36,7 +36,7 @@ class Level:
         pygame.time.set_timer(EVENT_TIMEOUT, TIMEOUT_STEP)
 
     def run(self, player_score: list[int]):
-        pygame.mixer_music.load(f'./assets/Level1.mp3')
+        pygame.mixer_music.load(f'./assets/{self.name}.mp3')
         pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()
 
@@ -86,8 +86,6 @@ class Level:
 
             EntityMediator.verify_collision(entity_list=self.entity_list)
             EntityMediator.verify_health(entity_list=self.entity_list)
-
-    pass
 
     def level_text(self, text_size: int, text: str, text_color: tuple, text_pos: tuple):
         text_font: Font = pygame.font.SysFont(name="8514oem Regular", size=text_size)
