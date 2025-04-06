@@ -114,17 +114,29 @@ MENU_OPTION = ('NEW GAME',
 PLAYER_KEY_UP = {'Player1': pygame.K_UP,
                  'Player2': pygame.K_w}
 PLAYER_KEY_DOWN = {'Player1': pygame.K_DOWN,
-                 'Player2': pygame.K_s}
+                   'Player2': pygame.K_s}
 PLAYER_KEY_LEFT = {'Player1': pygame.K_LEFT,
-                 'Player2': pygame.K_a}
+                   'Player2': pygame.K_a}
 PLAYER_KEY_RIGHT = {'Player1': pygame.K_RIGHT,
-                 'Player2': pygame.K_d}
+                    'Player2': pygame.K_d}
 PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
-                 'Player2': pygame.K_LCTRL}
+                    'Player2': pygame.K_LCTRL}
 
 SPAWN_TIME = 4000
-TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 20000
 
 WIN_WIDTH = 576
 WIN_HEIGHT = 324
+
+SCORE_POS = {
+    'Title': (WIN_WIDTH / 2, 50),
+    'TypeName': (WIN_WIDTH / 2, 80),
+    'Label': (WIN_WIDTH / 2, 90),
+    'Name': (WIN_WIDTH / 2, 110),
+    0: (WIN_WIDTH / 2, 110),
+    1: (WIN_WIDTH / 2, 130),
+    2: (WIN_WIDTH / 2, 150),
+    3: (WIN_WIDTH / 2, 170),
+    4: (WIN_WIDTH / 2, 190)
+}
+TIMEOUT_STEP = 100
+TIMEOUT_LEVEL = 5000
