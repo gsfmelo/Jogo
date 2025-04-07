@@ -29,13 +29,14 @@ class Score:
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             self.score_text(48,'YOU WON!', C_YELLOW, SCORE_POS['Title'])
+            text = 'Player 1 - type your name (max 5 characters):'
+            score = player_score[0]
 
             if game_mode == MENU_OPTION[0]:
                 score = player_score[0]
-                text = 'Player 1 - type your name (max 4 characters):'
             if game_mode == MENU_OPTION[1]:
                 score = (player_score[0]) + (player_score[1] / 2)
-                text = 'Type Team name (max 4 characters):'
+                text = 'Type Team name (max 5 characters):'
             self.score_text(20, text , C_WHITE, SCORE_POS['TypeName'])
 
             for event in pygame.event.get():
@@ -43,7 +44,7 @@ class Score:
                     pygame.quit()
                     sys.exit()
                 elif event.type == KEYDOWN:
-                    if event.key == K_RETURN and len(name) == 4:
+                    if event.key == K_RETURN and len(name) <= 5:
                         db_proxy.save_data({'name': name, 'score': score,'date': get_formated_date()})
                         self.show()
                         return
@@ -53,7 +54,6 @@ class Score:
                         if len(name) < 4:
                             name += event.unicode
             self.score_text(20, name, C_WHITE, SCORE_POS['Name'])
-
             pygame.display.flip()
             pass
 

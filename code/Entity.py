@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-import pygame
+import pygame.image
 
 from code.Const import ENTITY_HEALTH, ENTITY_DAMAGE, ENTITY_SCORE
 

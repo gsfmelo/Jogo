@@ -37,3 +37,5 @@ class Player(Entity):
                 return PlayerShot(name=f'{self.name}Shot', position=(self.rect.centerx, self.rect.centery))
             else:
                 return None
+        else:
+            return None
