@@ -20,8 +20,8 @@ class Menu:
 
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(55, "CRYSTAL", BLUE, ((WIN_WIDTH / 2), 70))
-            self.menu_text(55, "INVASION", BLUE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(55, "* CRYSTAL *", BLUE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(55, "* INVASION *", BLUE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
