@@ -1,10 +1,11 @@
 import pygame
 
-C_ORANGE = (255, 128, 0)
-C_WHITE = (255, 255, 255)
-C_YELLOW = (255, 200, 0)
-C_GREEN = (0, 128, 0)
-C_CYAN = (0, 128, 128)
+ORANGE = (255, 128, 0)
+WHITE = (255, 255, 255)
+YELLOW = (255, 200, 0)
+GREEN = (0, 128, 0)
+CYAN = (0, 128, 128)
+BLUE = (37, 222, 214)
 
 ENTITY_DAMAGE = {
     'Level1Bg0': 0,
@@ -74,31 +75,31 @@ ENTITY_HEALTH = {
 
 ENTITY_SHOT_DELAY = {
     'Player1': 20,
-    'Player2': 15,
+    'Player2': 20,
     'Enemy1': 100,
-    'Enemy2': 200,
-    'Enemy3': 100
+    'Enemy2': 100,
+    'Enemy3': 140
 
 }
 
 ENTITY_SPEED = {
     'Level1Bg0': 0,
-    'Level1Bg1': 0,
-    'Level1Bg2': 0,
-    'Level1Bg3': 1,
-    'Level1Bg4': 1,
+    'Level1Bg1': 1,
+    'Level1Bg2': 1,
+    'Level1Bg3': 2,
+    'Level1Bg4': 3,
     'Level2Bg0': 0,
-    'Level2Bg1': 0,
+    'Level2Bg1': 1,
     'Level2Bg2': 1,
     'Level2Bg3': 2,
     'Player1': 3,
     'Player2': 3,
-    'Player1Shot': 4,
+    'Player1Shot': 5,
     'Player2Shot': 5,
     'Enemy1': 2,
-    'Enemy1Shot': 5,
+    'Enemy1Shot': 3,
     'Enemy2': 1,
-    'Enemy2Shot': 2,
+    'Enemy2Shot': 4,
     'Enemy3': 2,
     'Enemy3Shot': 4
 }
@@ -122,13 +123,13 @@ PLAYER_KEY_RIGHT = {'Player1': pygame.K_RIGHT,
 PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
                     'Player2': pygame.K_LCTRL}
 
-SPAWN_TIME = 4000
+SPAWN_TIME = 3000
 
 WIN_WIDTH = 576
 WIN_HEIGHT = 324
 
 SCORE_POS = {
-    'Title': (WIN_WIDTH / 2, 50),
+    'Title': (WIN_WIDTH / 2, 40),
     'TypeName': (WIN_WIDTH / 2, 80),
     'Label': (WIN_WIDTH / 2, 90),
     'Name': (WIN_WIDTH / 2, 110),
@@ -139,4 +140,4 @@ SCORE_POS = {
     4: (WIN_WIDTH / 2, 190)
 }
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 5000
+TIMEOUT_LEVEL = 20000
